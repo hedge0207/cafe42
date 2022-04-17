@@ -19,8 +19,7 @@ class Settings(BaseSettings):
     secret_key: str
     sign_algorithm: str
     token_expire_minutes: int
-    db_user: str
-    db_password: str
+    mongo_url: str
     
 
     class Config:

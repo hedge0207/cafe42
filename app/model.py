@@ -33,8 +33,7 @@ class SaladOrder(BaseModel):
     class Config:
         arbitrary_types_allowed = True
 
-class Post(BaseModel):
-    writer: str
+class AdminPost(BaseModel):
     title: str
     content: str
     created_at: Optional[str] = datetime.now().strftime('%Y-%m-%d %H:%M:%S')
